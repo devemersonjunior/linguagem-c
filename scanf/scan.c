@@ -14,3 +14,4 @@ int main(){
 	
 	printf("A sua idade atual e %d e o seu peso e %f. \n", idade, peso);
 }
+
