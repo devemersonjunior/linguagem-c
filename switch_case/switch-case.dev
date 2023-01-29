@@ -1,6 +1,6 @@
 [Project]
-FileName=variaveis.dev
-Name=variaveis
+FileName=switch-case.dev
+Name=switch-case
 Type=1
 Ver=2
 ObjFiles=
@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=variaveis.c
+FileName=switch-case.c
 CompileCpp=0
 Folder=
 Compile=1

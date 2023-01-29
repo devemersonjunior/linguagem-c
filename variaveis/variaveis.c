@@ -20,6 +20,6 @@ int main(){
 	
 	printf("Dados informados \n");
 	printf("Idade: %d. \n", idade);
-	printf("altura: %.3f. \n", altura);
+	printf("altura: %.2f. \n", altura);
 	printf("Nome: %s. \n",nome);
 }
