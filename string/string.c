@@ -2,42 +2,103 @@
 #include <string.h>
 #include <locale.h>
 
-#define N 20
-
+#define N 50
 int main(){
-	setLocale(LC_ALL,"portuguese");
+	setlocale(LC_ALL,"Portuguese");
 	
-	char origem[N]={"Ola, mundo!"};
-	char destino[N];
+	char senha1[N];
+	char senha2[N];
+	int acesso;
 	
-	print("ASntes de strcpy: \n");
-	puts(origem);
-	puts(destino);
+	printf("Digite sua senha: \n");
+	gets(senha1);
 	
-	strcpy(destino,origem);
+	printf("Confirme sua senha: \n");
+	gets(senha2);
 	
-	printf("depois de strcpy: \n");
-	puts(origem);
-	puts(destino);
+	acesso = strcmp(senha1,senha2);
+	
+	if (acesso == 0){
+		printf("ACESSADO COM SUCESSO");
+	} else {
+		printf("SENHA INCOMPATIVEL");
+		
+		
+	}
 	
 	
+		
 	
 	
-//	char s[10];
+} 
+	//char s[N];
+	//char i;
 	
-//	printf("Digite qualquer coisa por favor: \n");
-//	gets(s);
-//	fflush(stdin);
+	//printf("Digite um texto: \n");
+	//gets(s);
+	//i = strlen(s);
+	//printf("\n tamanho do texto : %d \n\n", i);
 	
-//	puts("resultado:");
-//	puts(s);
-//	puts("");
+	//printf("Impressão de posição: \n");
+	//for(i=0;i<strlen(s);i++){
+	//	printf("%c",s[i]);
+	//}
+
+//---------------------------------------------------------------------
+	//char s1[N] = {"logica de "};
+	//char s2[N] = {"programação"};
 	
-//	printf("Digite qualquer coisa de novo \n");
-//	fgets(s,10,stdin);
-//	fflush(stdin);
+	//printf("Antes do STRCAT: \n");
+	//printf("str1: %s \n", s1);
+	//printf("str2: %s \n", s2);
 	
-//	puts("resultados:");
-//	puts(s);
+	//strcat(s1,s2);
 	
-}
+	//printf("Depois do STRCAT: \n");
+	//puts(s1);
+//---------------------------------------------------------------------	
+	//char origem[N] = {"Olá, Mundo!"};
+	//char destino[N];
+	
+	//printf("Antes do STRCPY: \n");
+	//puts(origem);
+	//puts(destino);
+	
+	//strcpy(destino,origem);
+	
+	//printf("Depois do STRCPY: \n");
+	//puts(origem);
+	//puts(destino);
+	//char s[10];
+//---------------------------------------------------------------------	
+	//printf("Digite algo(LEITURA PELO GETS): \n");
+	//gets(s);
+	//fflush(stdin);
+	
+	//puts("Resultado");
+	//puts(s);
+	//puts("");
+	
+	//printf("Digite algo(LEITURA PELO FGETS): \n");
+	//fgets(s,10,stdin);
+	//fflush(stdin);
+	
+	//puts("Resultado");
+	//puts(s);
+	//puts("");
+
+//---------------------------------------------------------------------
+
+	//char s[10];
+	
+	//printf("FUNCIONANDO DA FORMA SCANF CONVENCIONAL \n");
+	//scanf("%s", s);
+	//fflush(stdin);
+	
+	//printf("RESULTADO: %s \n\n", s);
+	
+	//printf("FUNCIONANDO DA FORMA SCANF APRIMORADO \n");
+	//scanf("%9[^\n]s", s);
+	//fflush(stdin);
+	
+	//printf("RESULTADO: %s \n\n", s);
